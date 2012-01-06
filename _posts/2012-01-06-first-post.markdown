@@ -1,3 +1,7 @@
+---
+layout: post
+---
+
 First Post
 ----------
 

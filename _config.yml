@@ -1,0 +1,10 @@
+destination: ./_site
+
+expires:
+  html: 3600 # one hour
+  assets: 1314000 # one year
+
+redirects:
+  - from: /rss/
+    to: http://feeds.feedburner.com/alexn/ADsp
+    type: 302
