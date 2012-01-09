@@ -1,4 +1,5 @@
 destination: ./_site
+pygments: true
 
 expires:
   html: 3600 # one hour
