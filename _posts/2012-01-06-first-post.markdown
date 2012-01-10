@@ -7,7 +7,7 @@ First Post
 
 This is my first post using Markdown to make text entry easier.
 
-{% highlight Python %}
+{% highlight python %}
   def func():
     for i in [1, 2, 3]:
 	  print "%s" % i
