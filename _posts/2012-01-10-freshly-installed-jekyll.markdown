@@ -9,7 +9,7 @@ I've just finished getting an initial blog setup using Heroku to host it, and Je
 
 So, welcome to my blog! 
 
-I'm considering writing up a bit about getting it all working, although I have noticed that there are a few blog posts around that probably have plenty of information. I used a couple to get this far - specifically the [Ruby on Rails Tutorial](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book), a blog post [blogging for hackers](http://bionicspirit.com/blog/2012/01/05/blogging-for-hackers.html) by Luigi Montanez, and the Jekyll usage [instructions](https://github.com/mojombo/jekyll/wiki/usage).
+I'm considering writing up a bit about getting it all working, although I have noticed that there are a few blog posts around that probably have plenty of information. I used a couple to get this far - specifically the [Ruby on Rails Tutorial](http://ruby.railstutorial.org/ruby-on-rails-tutorial-book), a blog post [blogging for hackers](http://bionicspirit.com/blog/2012/01/05/blogging-for-hackers.html) by Alexandru Nedelcu, a blog on [migrating from wordpress to jekyll](http://vitobotta.com/how-to-migrate-from-wordpress-to-jekyll/), and the Jekyll usage [instructions](https://github.com/mojombo/jekyll/wiki/usage).
 
 I have only got the bare essentials working right now, and still intend to make use of Google App Engine to act as a CDN as mentioned in Luigi's post. It's actually pretty impressive that his (free) setup continued to work when he got a pretty large number (10,000) of visits in one day. 
 
