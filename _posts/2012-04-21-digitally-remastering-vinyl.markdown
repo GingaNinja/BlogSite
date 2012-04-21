@@ -44,7 +44,7 @@ While you're there, check the quality setting (underneath recording on the prefe
 
 You won't actually hear anything until you start recording, so hit the record button (the big red one), and check that sound comes through as you start the record. If you don't hear anything, try different input settings on the main screen.
 
-If you are successfull, you will see audacity filling your screen with this:
+If you are successful, you will see audacity filling your screen with this:
 
 ![Audacity recording audio](/images/audacityrecording.png)
 
