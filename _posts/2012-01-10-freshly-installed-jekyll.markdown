@@ -1,8 +1,9 @@
 ---
 layout: post
+tags: [meta]
 ---
 
-Freshly Installed Jekyll
+[Freshly Installed Jekyll]({{page.url}})
 ------------------------
 
 I've just finished getting an initial blog setup using Heroku to host it, and Jekyll to create a static site. I'm impressed so far. Obviously, the site needs a bit of styling done to it, but the nice thing is that I can easily rerun Jekyll to recreate it with the added styling.

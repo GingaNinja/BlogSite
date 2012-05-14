@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: [audio, vinyl]
 ---
 
 Digitally Remastering Vinyl
