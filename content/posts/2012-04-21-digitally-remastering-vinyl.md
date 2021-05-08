@@ -1,12 +1,26 @@
 ---
-layout: post
-tags: [audio, vinyl]
+title: "Digitally Remastering Vinyl" # Title of the blog post.
+date: 2012-04-21T16:28:38+01:00 # Date of post creation.
+description: "How to get vinyl onto mp3" # Description used for search engine.
+featured: true # Sets if post is a featured post, making it appear on the sidebar. A featured post won't be listed on the sidebar if it's the current page
+draft: false # Sets whether to render this page. Draft of true will not be rendered.
+toc: false # Controls if a table of contents should be generated for first-level links automatically.
+# menu: main
+featureImage: "/images/path/file.jpg" # Sets featured image on blog post.
+thumbnail: "/images/path/thumbnail.png" # Sets thumbnail image appearing inside card on homepage.
+shareImage: "/images/path/share.png" # Designate a separate image for social media sharing.
+codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
+codeLineNumbers: false # Override global value for showing of line numbers within code block.
+figurePositionShow: true # Override global value for showing the figure label.
+categories:
+  - Music
+  - Technology
+tags:
+  - audio
+  - vinyl
 ---
 
-Digitally Remastering Vinyl
----------------------------
-
-A couple of weeks ago, I went to my local indoor market, and found a couple of old vinyl record shops, and as they had quite a few for only a pound, I decided to buy one for Jo - [Bananarama, The Greatest Hits Collection](http://en.wikipedia.org/wiki/Greatest_Hits_Collection_(Bananarama_album%29), and one for me - [Gram Parsons, Grievious Angel](http://en.wikipedia.org/wiki/Grievous_Angel).
+A couple of weeks ago, I went to my local indoor market, and found a couple of old vinyl record shops, and as they had quite a few for only a pound, I decided to buy one for Jo - [Bananarama, The Greatest Hits Collection](https://en.wikipedia.org/wiki/Greatest_Hits_Collection_(Bananarama_album)), and one for me - [Gram Parsons, Grievious Angel](http://en.wikipedia.org/wiki/Grievous_Angel).
 
 Anyway, I thought I'd have a good go at putting these albums onto mp3, and while going about it, I might as well see if I could get rid of the pops and clicks. We've got a couple of other records that I've thought about sorting out before as well (which had really bad pops and clicks), so it justified me buying a new stylus for the record player. Incidentally, most shops don't sell styluses (is it styli?) anymore, but Maplin does. They seem to have quite a selection, although you might have to do a bit of homework to suss out exactly which stylus you need, as the original models might not exist.
 
@@ -25,21 +39,21 @@ If you need a preamp, you can opt for the one built into your (old) stereo. Most
 
 Obvously, you might run into issues with correct connectors. For example, here is the connector I used for connection the line-out of the record player to my computer mic socket:
 
-![RCA to minijack](/images/rca2minijack.jpg)
+![RCA to minijack:left::round](/img/rca2minijack.jpg "RCA to minijack")
 
 Before you can start recording you need to set your sound inputs so that you are recording the correct thing. On the Mac this is one in System Preferences -> Sound and then choosing the 'Input' settings:
 
-![Mac Sound Preferences](/images/macSoundPrefs.png)
+![Mac Sound Preferences](/img/macSoundPrefs.png)
 
 With Windows this is done with the volume control in the taskbar, setting the recording devices (Windows 7).
 
 Now you can load up Audacity. The first thing is to make sure you have selected the correct input. You might want to fiddle around with these until you get a sound recorded.
 
-![Audacity Volume settings](/images/audacityvolume.png)
+![Audacity Volume settings](/img/audacityvolume.png)
 
 To be able to hear anything while recording, you will need to go into the Preferences menu, and choose the recording section. Make sure Overdub is checked, and Software Playthough - Hardware Playthrough may work - it depends on your pc - you'll know if it works, becaus you'll hear the record while you are recording.
 
-![Audacity Recording options](/images/audacitymonitoring.png)
+![Audacity Recording options](/img/audacitymonitoring.png)
 
 While you're there, check the quality setting (underneath recording on the preferences) - it should be set to Sample Rate of 44100hz, and 32-bit float samle format.
 
@@ -47,7 +61,7 @@ You won't actually hear anything until you start recording, so hit the record bu
 
 If you are successful, you will see audacity filling your screen with this:
 
-![Audacity recording audio](/images/audacityrecording.png)
+![Audacity recording audio](/img/audacityrecording.png)
 
 I recommend recording both sides in one go, because you can easily cut the bit between sides later.
 
@@ -69,17 +83,17 @@ Before you begin removing the pops and clicks, it's worth cutting down the recor
 
 So now, start playing through your recording - you can disconnect the record player, because this in no longer needed. If you hear a pop or click, you can zoom in to where it is currently playing. Sometimes it is hard to find the pop or click when there is more noise going on, but usually you can seem them as thin lines going vertically. If you zoom in far enough (keep selecting smaller portions, and zooming your selection, or just zooming in), you'll see dotted lines - these means you've zoomed in enough to be able to 'draw' out the pop:
 
-![Audacity zoom of a pop](/images/audacitypopzoom.png)
+![Audacity zoom of a pop](/img/audacitypopzoom.png)
 
 Once you're zoomed in, press F3 to change to the drawing tool. The trick here is to draw a line that aproximates what would have been there if the pop wasn't. Sometimes it helps to zoom out to see what the rest of the sound looks like, but most times, it's pretty clear what to do.
 
-![Audacity zoom of a cleaned pop](/images/audacitycleanzoom.png)
+![Audacity zoom of a cleaned pop](/img/audacitycleanzoom.png)
 
 Once you're happy with the removal, you can split the whole recording into individual tracks. If you zoom out enough, you can see where each track ends, and the next one begings. You can insert a track marking where you put the cursor by selecting Tracks -> Add Label at Selection. You then give a name for each track in the text box that appears.
 
 You can then export the whole album to a set of mp3s, or as wav files. Choose File -> Export Multiple:
 
-![Exporting multiple tracks](/images/audacity_export.png)
+![Exporting multiple tracks](/img/audacity_export.png)
 
 Choosing Wav is useful if you want to burn a cd. I normally go for mp3 files, because CDs are pretty much obsolete right? :-)
 

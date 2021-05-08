@@ -1,10 +1,24 @@
 ---
-layout: post
-tags: [meta]
+title: "Freshly Installed Jekyll" # Title of the blog post.
+date: 2012-01-10T16:08:35+01:00 # Date of post creation.
+description: "Jekyll working, here's how I did it" # Description used for search engine.
+featured: false # Sets if post is a featured post, making it appear on the sidebar. A featured post won't be listed on the sidebar if it's the current page
+draft: false # Sets whether to render this page. Draft of true will not be rendered.
+toc: false # Controls if a table of contents should be generated for first-level links automatically.
+# menu: main
+featureImage: "/images/path/file.jpg" # Sets featured image on blog post.
+thumbnail: "/images/path/thumbnail.png" # Sets thumbnail image appearing inside card on homepage.
+shareImage: "/images/path/share.png" # Designate a separate image for social media sharing.
+codeMaxLines: 10 # Override global value for how many lines within a code block before auto-collapsing.
+codeLineNumbers: false # Override global value for showing of line numbers within code block.
+figurePositionShow: true # Override global value for showing the figure label.
+categories:
+  - Technology
+tags:
+  - Jekyll
+  - Heroku
+  - meta
 ---
-
-[Freshly Installed Jekyll]({{page.url}})
-------------------------
 
 I've just finished getting an initial blog setup using Heroku to host it, and Jekyll to create a static site. I'm impressed so far. Obviously, the site needs a bit of styling done to it, but the nice thing is that I can easily rerun Jekyll to recreate it with the added styling.
 
