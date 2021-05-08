@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "hungry-mestorf-e314bb.netlify.app"
 languageCode = "en-us"
 title = "BurpyDave's Twiddlesticks"
 theme = "hugo-clarity"  
