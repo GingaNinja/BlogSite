@@ -13,6 +13,7 @@ const handler = async(event) => {
   // get the arguments from the notification
   var body = JSON.parse(event.body);
 
+  console.log(body);
   // prepare call to the Slack API
   var slackURL = process.env.SLACK_WEBHOOK_URL
   var slackPayload = {
