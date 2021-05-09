@@ -1,4 +1,4 @@
-baseURL = "https://hungry-mestorf-e314bb.netlify.app"
+baseURL = "https://blog.burpydave.uk"
 languageCode = "en-us"
 title = "BurpyDave's Twiddlesticks"
 theme = "hugo-clarity"  
