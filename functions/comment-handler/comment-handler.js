@@ -1,5 +1,3 @@
-'use strict';
-
 var request = require("request");
 
 // populate environment variables locally.
@@ -10,7 +8,7 @@ const URL = "https://jamstack-comments.netlify.com";
 /*
   Our serverless function handler
 */
-export function handler(event, context, callback) {
+const handler = async(event) => {
 
   // get the arguments from the notification
   var body = JSON.parse(event.body);
@@ -65,3 +63,5 @@ export function handler(event, context, callback) {
     });
 
 }
+
+module.exports = { handler }
