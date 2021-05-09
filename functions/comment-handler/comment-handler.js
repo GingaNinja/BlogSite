@@ -1,4 +1,4 @@
-import { post } from "request";
+
 
 // populate environment variables locally.
 require('dotenv').config()
@@ -9,6 +9,7 @@ const URL = "https://jamstack-comments.netlify.com";
   Our serverless function handler
 */
 const handler = async(event) => {
+  import { post } from "request";
   // get the arguments from the notification
   var body = JSON.parse(event.body);
 
