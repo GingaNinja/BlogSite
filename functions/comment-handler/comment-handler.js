@@ -61,7 +61,7 @@ const handler = async(event) => {
       })
       return console.log(msg);
     });
-
+return { statusCode: 200, body: slackURL}
 }
 
 module.exports = { handler }
