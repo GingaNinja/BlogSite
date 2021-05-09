@@ -19,6 +19,7 @@
   "devDependencies": {
     "dotenv": "^9.0.1",
     "gulp": "^4.0.2",
+    "node-fetch": "^2.6.1",
     "request": "^2.88.2"
   }
 }
