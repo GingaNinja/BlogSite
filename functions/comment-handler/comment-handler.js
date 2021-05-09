@@ -15,6 +15,7 @@ const handler = async(event) => {
 
   // prepare call to the Slack API
   var slackURL = process.env.SLACK_WEBHOOK_URL
+  console.log(slackURL);
   var slackPayload = {
     "text": "New comment on " + URL,
 	  "attachments": [
