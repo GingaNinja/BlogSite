@@ -9,7 +9,7 @@ const fetch = require('node-fetch')
 /*
   Our serverless function handler
 */
-export async function handler(event, context) {
+const handler = async(event, context) => {
   // get the arguments from the notification
   var body = JSON.parse(event.body);
 
@@ -78,3 +78,4 @@ export async function handler(event, context) {
 }
 
 //export default { handler }
+module.exports = { handler }
