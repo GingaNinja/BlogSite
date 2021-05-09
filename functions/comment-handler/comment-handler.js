@@ -57,8 +57,10 @@ const handler = async(event, context) => {
         text: body.text,
       }),
     })
+    console.log('success')
     return { statusCode: 204, body: `Post to Slack successful!`}
   } catch (error) {
+    console.log(`Internal Server Error: ${error}`)
     return { statusCode: 500, body: `Internal Server Error: ${error}` }
   }
 //     request.post({url:slackURL, json: slackPayload}, function(err, httpResponse, body) {
