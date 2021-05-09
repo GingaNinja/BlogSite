@@ -17,17 +17,29 @@
         </form>
     </div>
 </section>
+{{ $thisPost := .RelPermalink }}
+{{ $comments := .Site.Data.comments }}
+{{ $.Scratch.Set "counter" 0}}
+{{ range $comments }}
+    {{ range . }}{{ if eq .path $thisPost }}{{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}{{ end }}{{ end }}
+{{ end }}
+{{ if gt ($.Scratch.Get "counter") 0 }}{{/* only show comment section if there are comments */}}
 <section id="comment-list" class="w-full border border-dark rounded-sm bg-grey-light pt-8 my-12 shadow-md">
-    <div class="w-full md:w-5/6 lg:w-3/4 xl:w-3/4 px-4 lg:px-0 pb-4 mx-auto">
+    <div class="row mb-5 w-full md:w-5/6 lg:w-3/4 xl:w-3/4 px-4 lg:px-0 pb-4 mx-auto">
         <h3 class="text-dark text-center">Comments</h3>
-        {{ range $comments := .Site.Data.comments }}
+        {{ range $comments }}
             {{ range . }}
-                <div class="w-full flex flex-col font-light border-b border-solid border-dark my-8 mx-auto">
-                    <span class="block">Posted at: {{ .date | dateFormat "Mon, 02 Jan. 2006, 15:04 MST" }}</span>
-                    <span class="block">By: {{ .name }}</span>
-                    <p class="">Comment:<br>{{ .comment }}</p>
+                {{ if eq .path $thisPost }}
+                <div class="col-sm-12 py-3 w-full flex flex-col font-light border-b border-solid border-dark my-8 mx-auto">
+                    <div class="shadow-sm px-4 py-4">
+                        <span class="block">Posted at: {{ .date | dateFormat "Mon, 02 Jan. 2006, 15:04 MST" }}</span>
+                        <span class="block">By: {{ .name }}</span>
+                        <p class="">Comment:<br>{{ .comment }}</p>
+                    </div>
                 </div>
+                {{ end }}
             {{ end }}
         {{ end }}
     </div>
 </section>
+{{ end }}

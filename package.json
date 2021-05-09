@@ -1,0 +1,24 @@
+{
+  "name": "blogsite",
+  "version": "1.0.0",
+  "description": "burpydave's blogsite",
+  "scripts": {
+    "start": "gulp dev && hugo server",
+    "deploy": "gulp build && hugo --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GingaNinja/BlogSite.git"
+  },
+  "author": "Dave Arkell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GingaNinja/BlogSite/issues"
+  },
+  "homepage": "https://github.com/GingaNinja/BlogSite#readme",
+  "devDependencies": {
+    "dotenv": "^9.0.1",
+    "gulp": "^4.0.2",
+    "request": "^2.88.2"
+  }
+}

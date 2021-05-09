@@ -1,0 +1,30 @@
+{
+  "/posts/2012-01-10-freshly-installed-jekyll/": [
+    {
+      "name": "dave",
+      "comment": "a test comment here",
+      "path": "/posts/2012-01-10-freshly-installed-jekyll/",
+      "date": "2021-05-09T17:53:16.716Z"
+    }
+  ],
+  "/posts/2012-04-21-digitally-remastering-vinyl/": [
+    {
+      "name": "dave3",
+      "comment": "this should pop up in my emails",
+      "path": "/posts/2012-04-21-digitally-remastering-vinyl/",
+      "date": "2021-05-09T17:12:40.973Z"
+    },
+    {
+      "name": "dave2",
+      "comment": "and another thing",
+      "path": "/posts/2012-04-21-digitally-remastering-vinyl/",
+      "date": "2021-05-09T17:08:21.815Z"
+    },
+    {
+      "name": "dave",
+      "comment": "stuff",
+      "path": "/posts/2012-04-21-digitally-remastering-vinyl/",
+      "date": "2021-05-09T17:06:37.827Z"
+    }
+  ]
+}
