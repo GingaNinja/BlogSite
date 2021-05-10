@@ -57,10 +57,10 @@ const handler = async(event, context, callback) => {
         var payload = {
           'form-name' : "approved-comments",
           'path': data.path,
-          'received': new Date().toString(),
-          'email': data.email,
-          'name': data.name,
-          'comment': data.comment
+          //'received': new Date().toString(),
+          'Email': data.Email,
+          'Name': data.Name,
+          'Comment': data.Comment
         };
         var approvedURL = URL;
 
