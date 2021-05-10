@@ -68,12 +68,12 @@ const handler = async(event, context) => {
             fallback: `Manage comments on ${body.site_url}`,
             callback_id: "comment-action",
             actions: [
-              {
-                type: "button",
-                text: "Approve comment",
-                name: "approve",
-                value: body.id
-              },
+              // {
+              //   type: "button",
+              //   text: "Approve comment",
+              //   name: "approve",
+              //   value: body.id
+              // },
               {
                 type: "button",
                 style: "danger",
