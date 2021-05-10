@@ -3,7 +3,7 @@ var request = require("request");
 // populate environment variables locally.
 require('dotenv').config();
 const {
-  NETLIFY_AUTH_TOKEN
+  API_AUTH
 } = process.env;
 
 // hardcoding this for a moment... TODO: replace request with somethign that follows redirects
@@ -13,7 +13,7 @@ const URL = "https://jamstack-comments.netlify.com/";
   delete this submission via the api
 */
 function purgeComment(id) {
-  var url = `https://api.netlify.com/api/v1/submissions/${id}?access_token=${NETLIFY_AUTH_TOKEN}`;
+  var url = `https://api.netlify.com/api/v1/submissions/${id}?access_token=${API_AUTH}`;
   request.delete(url, function(err, response, body){
     if(err){
       return console.log(err);
@@ -45,7 +45,7 @@ const handler = async(event, context, callback) => {
   } else if (method == "approve"){
 
     // get the comment data from the queue
-    var url = `https://api.netlify.com/api/v1/submissions/${id}?access_token=${NETLIFY_AUTH_TOKEN}`;
+    var url = `https://api.netlify.com/api/v1/submissions/${id}?access_token=${API_AUTH}`;
 
 
 
