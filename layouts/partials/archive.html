@@ -1,0 +1,24 @@
+{{ $pages := .Pages }}
+{{ if .IsHome }}
+  {{ $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{ end }}
+<div class="grid-inverse wrap content">
+  <ul class="posts" id="posts">
+    {{- range (.Paginate $pages).Pages }}
+      {{ partial "excerpt" . }}
+    {{- end }}
+    <li>
+      {{- template "_internal/pagination.html" . }}
+    </li>
+  </ul>
+  {{- partial "sidebar" . }}
+</div>
+<form name="approved-comments" netlify netlify-honeypot="bot-field" hidden>
+  <input name="path" type="hidden" />
+  <textarea name="Comment" rows="6" placeholder="Comment&ast;" style="resize:none;" required></textarea>
+          <div >
+              <input type="text" name="Name" placeholder="Name&ast;" required>
+              <input type="email" name="Email" placeholder="E-Mail Address&ast;" required>
+              <input type="text" name="Website" placeholder="Website">
+          </div>
+</form>
