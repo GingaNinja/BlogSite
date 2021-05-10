@@ -18,6 +18,7 @@
   "homepage": "https://github.com/GingaNinja/BlogSite#readme",
   "devDependencies": {
     "dotenv": "^9.0.1",
+    "gravatar": "^1.8.1",
     "gulp": "^4.0.2",
     "node-fetch": "^2.6.1",
     "request": "^2.88.2"

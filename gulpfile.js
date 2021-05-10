@@ -2,6 +2,7 @@ var gulp = require('gulp'),
 request = require('request'),
 fs = require('fs'),
 config = require('dotenv').config();
+const gravatar = require('gravatar');
 
 var buildSrc = "./";
 
@@ -17,9 +18,11 @@ gulp.task("get-comments", function (done) {
             // shape the data
             for (var item in body) {
                 var data = body[item].data;
+                var email = data.Email;
                 var comment = {
                     name: data.Name,
-                    comment: data.Comment,
+                    avatar: gravatar.url(email, {s: '100', r: 'x', d: 'retro'}, true),
+                    comment: data.Comment.trim(),
                     path: data.path,
                     date: body[item].created_at
                 };
