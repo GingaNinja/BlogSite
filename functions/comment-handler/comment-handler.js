@@ -59,10 +59,10 @@ const handler = async(event, context) => {
           {
             fallback: "New comment on the blog site",
             color: "#444",
-            author_name: body.data.email,
+            author_name: body.data.Email,
             title: body.data.path,
             title_link: `${body.site_url}${body.data.path}`,
-            text: body.data.comment,
+            text: body.data.Comment,
           },
           {
             fallback: `Manage comments on ${body.site_url}`,
