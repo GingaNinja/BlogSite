@@ -28,8 +28,6 @@ function purgeComment(id) {
   Handle the lambda invocation
 */
 const handler = async(event, context, callback) => {
-
-  console.log(event.body)
   // parse the payload
   var body = event.body.split("payload=")[1];
   var payload = JSON.parse(unescape(body));
@@ -83,7 +81,7 @@ const handler = async(event, context, callback) => {
             statusCode: 200,
             body: msg
           })
-          return console.log(msg);
+          return { statusCode: 200, body: msg };
         });
       }
     });
