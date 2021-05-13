@@ -21,7 +21,7 @@
                             <header class="comment-header">
                                 <span class="comment-meta">
                                     <h3>{{ .name }}</h3>
-                                    <div class="date">commented on <time>{{ .date | dateFormat "Mon, 2 Jan 2006, 15:04 MST" }}</time></div>
+                                    <div class="date"> commented on <time>{{ .date | dateFormat "Mon, 2 Jan 2006, 15:04 MST" }}</time></div>
                                 </span>
                             </header>
                             <div class="comment-text">{{ .comment | markdownify | safeHTML }}</div>
