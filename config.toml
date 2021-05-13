@@ -8,8 +8,10 @@ canonifyUrls = false
 [params]
 figurePositionLabel = "Pic"
 figurePositionShow = false
-twitter = "burpydave"
+twitter = "@burpydave"
+largeTwitterCard = true
 comments = true 
+customJS = ["js/luxon.min.js", "js/custom.js"]
 
 [markup]
   [markup.highlight]
