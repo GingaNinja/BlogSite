@@ -3,9 +3,16 @@
     {
       "name": "dave",
       "avatar": "https://s.gravatar.com/avatar/970e3daa6f32f6a6fd7c5ce2fec9618d?s=100&r=x&d=retro",
-      "comment": "There should only be a delete button",
+      "comment": "Just some plain comment",
       "path": "/posts/2012-01-10-freshly-installed-jekyll/",
-      "date": "2021-05-10T10:24:10.170Z"
+      "date": "2021-05-13T11:24:10.031Z"
+    },
+    {
+      "name": "dave",
+      "avatar": "https://s.gravatar.com/avatar/970e3daa6f32f6a6fd7c5ce2fec9618d?s=100&r=x&d=retro",
+      "comment": "### do links work [thing](https://google.com)",
+      "path": "/posts/2012-01-10-freshly-installed-jekyll/",
+      "date": "2021-05-10T11:56:06.229Z"
     }
   ]
 }
