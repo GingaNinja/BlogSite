@@ -10,10 +10,15 @@ figurePositionLabel = "Pic"
 figurePositionShow = false
 twitter = "@burpydave"
 largeTwitterCard = true
+introDescription = "Just another blog from a *Geek Software Developer*"
+photo = "/img/me.webp"
 comments = true 
 customJS = ["js/luxon.min.js", "js/custom.js"]
 
-[markup]
+[author]
+name = "Dave Arkell"
+
+[markup]  
   [markup.highlight]
     anchorLineNos = false
     codeFences = true
