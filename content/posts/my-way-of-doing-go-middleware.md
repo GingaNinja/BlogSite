@@ -3,7 +3,7 @@ title: "My Way of Doing Go Middleware" # Title of the blog post.
 date: 2021-05-10T14:48:07+01:00 # Date of post creation.
 description: "Article description." # Description used for search engine.
 featured: true # Sets if post is a featured post, making it appear on the sidebar. A featured post won't be listed on the sidebar if it's the current page
-draft: false # Sets whether to render this page. Draft of true will not be rendered.
+draft: true # Sets whether to render this page. Draft of true will not be rendered.
 toc: false # Controls if a table of contents should be generated for first-level links automatically.
 # menu: main
 # featureImage: "/images/path/file.jpg" # Sets featured image on blog post.
